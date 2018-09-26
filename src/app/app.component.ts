@@ -12,16 +12,26 @@ export class AppComponent{
   title = 'sample-table';
   tableDataSource: NgxSampleTableItem[] = [];
   seachTextbox: string = '';
+  isTableVisible: boolean = true;
 
   @ViewChild('dataTable') dataTable: NgxSampleTableComponent;
   constructor(private dataService: DataService){
   }
   searchClickHandler(){
     this.dataService.getAlphaNumericData(this.seachTextbox).subscribe((res: NgxSampleTableItem[])=>{
-      this.tableDataSource = res["alpha-numeric-values"];
+      this.isTableVisible = true;
+      let data = res["data"]["numbers"];
+      data.forEach((item, index )=> {
+        this.tableDataSource.push({"id": (index+1),"output":item});
+      });
+      // this.tableDataSource = res["data"]["numbers"];
       setTimeout(() => {
         this.dataTable.setDataSource(this.tableDataSource);
       });
+    },
+    (error) => {
+      this.isTableVisible = false;
+      this.tableDataSource = [];
     });    
   }
 }

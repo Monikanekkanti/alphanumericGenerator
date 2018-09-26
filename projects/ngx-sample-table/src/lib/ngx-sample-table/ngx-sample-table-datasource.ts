@@ -10,29 +10,29 @@ export interface NgxSampleTableItem {
   id: number;
 }
 
-// TODO: replace this with real data from your application
-const EXAMPLE_DATA: NgxSampleTableItem[] = [
-  {id: 1, output: 'Number1'},
-  {id: 2, output: 'Number2'},
-  {id: 3, output: 'Number3'},
-  {id: 4, output: 'Number4'},
-  {id: 5, output: 'Number5'},
-  {id: 6, output: 'Number6'},
-  {id: 7, output: 'Number7'},
-  {id: 8, output: 'Number8'},
-  {id: 9, output: 'Number9'},
-  {id: 10, output: 'Number10'},
-  {id: 11, output: 'Number11'},
-  {id: 12, output: 'Number12'},
-  {id: 13, output: 'Number13'},
-  {id: 14, output: 'Number14'},
-  {id: 15, output: 'Number15'},
-  {id: 16, output: 'Number16'},
-  {id: 17, output: 'Number17'},
-  {id: 18, output: 'Number18'},
-  {id: 19, output: 'Number19asdfds'},
-  {id: 20, output: 'Number20asdfads'},
-];
+// // TODO: replace this with real data from your application
+// const EXAMPLE_DATA: NgxSampleTableItem[] = [
+//   {id: 1, output: 'Number1'},
+//   {id: 2, output: 'Number2'},
+//   {id: 3, output: 'Number3'},
+//   {id: 4, output: 'Number4'},
+//   {id: 5, output: 'Number5'},
+//   {id: 6, output: 'Number6'},
+//   {id: 7, output: 'Number7'},
+//   {id: 8, output: 'Number8'},
+//   {id: 9, output: 'Number9'},
+//   {id: 10, output: 'Number10'},
+//   {id: 11, output: 'Number11'},
+//   {id: 12, output: 'Number12'},
+//   {id: 13, output: 'Number13'},
+//   {id: 14, output: 'Number14'},
+//   {id: 15, output: 'Number15'},
+//   {id: 16, output: 'Number16'},
+//   {id: 17, output: 'Number17'},
+//   {id: 18, output: 'Number18'},
+//   {id: 19, output: 'Number19asdfds'},
+//   {id: 20, output: 'Number20asdfads'},
+// ];
 
 /**
  * Data source for the NgxSampleTable view. This class should
