@@ -1,0 +1,13 @@
+<form name="myform" ng-submit="create()">
+    <label>Enter any 7 or 10 digit number.</label>
+    <input type="text"
+           myNumberOnly
+           name="price_field"
+           require
+           [(ngModel)]="seachTextbox"
+           maxlength="10"
+           pattern="[0-9]"/>
+    <button type="button" (click)="searchClickHandler()">Submit </button>
+ </form>
+
+ <lib-ngx-sample-table *ngIf="tableDataSource.length > 0" #dataTable></lib-ngx-sample-table>
